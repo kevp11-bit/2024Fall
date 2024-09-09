@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulma Menu Example</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <style>
+        
+        html, body {
+            background-color: rgb(220, 250, 230);
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+   
+        .container {
+            background-color: transparent;
+        }
+
+        
+        .navbar-item.has-dropdown::after {
+            display: none;
+        }
+
+        
+        nav .navbar-item.has-dropdown:hover .navbar-dropdown,
+        nav .navbar-item.is-active .navbar-dropdown {
+            display: block;
+            
+        }
+
+        
+        .navbar.is-success {
+            background-color: rgb(39, 156, 64); 
+        }
+
+        .navbar-dropdown {
+            background-color: rgb(39, 156, 64); 
+        }
+
+        .navbar-dropdown .navbar-item {
+            color: black; 
+        }  
+        .navbar-item.navbar-item.is-active{
+            color: red;
+        }   
+        
+
+        .alert {
+            background-color: rgb(255, 255, 255);
+            border-left: 5px solid rgb(39, 196, 64);
+            padding: 15px;
+            margin: 25px;
+        }
+
+        .yellow {
+            border-color: rgb(245, 245, 80);
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar is-success" role="navigation" aria-label="main navigation">
+        <div class="navbar-menu">
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link is-arrowless">
+                    <b>File</b>
+                </a>
+                <div class="navbar-dropdown">
+                    <a class="navbar-item">New</a>
+                    <a class="navbar-item">Open</a>
+                    <a class="navbar-item">Save</a>
+                    <a class="navbar-item">Print</a>
+                    <a class="navbar-item">Close</a>
+                </div>
+            </div>
+
+            <div class="navbar-item has-dropdown" id="edit-menu">
+                <a class="navbar-link is-arrowless">
+                    Edit
+                </a>
+                <div class="navbar-dropdown">
+                    <a class="navbar-item">Undo</a>
+                    <a class="navbar-item">Redo</a>
+                    <a class="navbar-item">Cut</a>
+                    <a class="navbar-item">Copy</a>
+                    <a class="navbar-item">Paste</a>
+                    <a class="navbar-item">Delete</a>
+                    <a class="navbar-item">Select All</a>
+                </div>
+            </div>
+
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link is-arrowless">
+                    <b>View</b>
+                </a>
+                <div class="navbar-dropdown">
+                    <a class="navbar-item">Zoom In</a>
+                    <a class="navbar-item">Zoom Out</a>
+                    <a class="navbar-item">Actual Size</a>
+                    <a class="navbar-item">Fit Page</a>
+                    <a class="navbar-item">Fit Width</a>
+                    <a class="navbar-item">Fit Height</a>
+                    <a class="navbar-item">Rotate Left</a>
+                    <a class="navbar-item">Rotate Right</a>
+                    <a class="navbar-item">Full Screen</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="alert">
+            <h3 class="title is-4">Instructions</h3>
+            <p>Recreate this page using <b><i>only CSS</i></b>. Do yourself a favor and 1) Do not view the source. Figure it out yourself. 2) Do not search for the solution. Learn CSS until you know enough to do this.</p>
+        </div>
+
+        <div class="alert yellow">
+            <h3 class="title is-4">Extra Credit</h3>
+            <p>Notice how the Edit menu (besides for not being bold) reacts to clicks. If you click the edit menu, it remains open until you click somewhere else. (This you might need to search for)</p>
+        </div>
+    </div>
+
+    
+</body>
+
+</html>
