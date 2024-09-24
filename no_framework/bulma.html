@@ -292,6 +292,17 @@
                   </div>
                 </div>                  
                </form>
+               <div class="box" id="todo-list">
+                <h2 class="subtitle">Todo List</h2>
+                <div class="field">
+                    <label class="label">New Todo</label>
+                    <div class="control">
+                        <input class="input" id="todoInput" type="text" placeholder="Add a new todo item">
+                    </div>
+                </div>
+                <div class="todo-list" id="todoList"></div>
+            </div>
+               
 
             </div>
             <div class="column is-half">
@@ -328,6 +339,24 @@
             </div>
           </div>
         </div>
+        <script>
+            const todoInput = document.getElementById('todoInput');
+            const todoList = document.getElementById('todoList');
+
+            todoInput.addEventListener('keypress', function (event) {
+                if (event.key === 'Enter' && todoInput.value.trim() !== '') {
+                    const todoItem = document.createElement('div');
+                    todoItem.classList.add('todo-item', 'is-flex', 'is-align-items-center', 'mb-2');
+                    
+                    todoItem.innerHTML = `
+                        <span class="mr-2">${todoInput.value}</span>
+                    `;
+                    
+                    todoList.appendChild(todoItem);
+                    todoInput.value = ''; // Clear input
+                }
+            });
+        </script>
 
       </div>
 
