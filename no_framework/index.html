@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Bulma Example</title>
+    <title>First Bulma Experience</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css">
    
     <style>@import "https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css";</style>
 </head>
-<body>
-    <nav class="navbar" role="navigation" aria-label="main navigation">
+
+<p>delete</p>
+
+<body>  
+    <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
           <a class="navbar-item" href="https://bulma.io">
             <svg width="640" height="160" viewBox="0 0 640 160" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -28,33 +31,37 @@
         </div>
       
         <div id="navbarBasicExample" class="navbar-menu">
-          <div class="navbar-start">
-            <a class="navbar-item">
+          <div class="navbar-item has-dropdown">
+            <a class="navbar-item has-text-white" href="https://bulma.io/">
               Home
             </a>
       
-            <a class="navbar-item">
-              Documentation
-            </a>
-      
-            <div class="navbar-item has-dropdown is-hoverable">
-              <a class="navbar-link">
-                More
-              </a>
-      
-              <div class="navbar-dropdown">
-                <a class="navbar-item">
-                  About
+            <div class="navbar-item has-text-white is-hoverable">
+              <a class="navbar-link has-text-white" href="https://bulma.io/documentation/overview/start/">
+                Docs
+              </a>      
+              <div class="navbar-dropdown" >
+                <a class="navbar-item" href="https://bulma.io/documentation/overview/start/">
+                  Overview
                 </a>
-                <a class="navbar-item is-selected">
-                  Jobs
+                <a class="navbar-item" href="https://bulma.io/documentation/overview/">
+                  Modifiers
                 </a>
-                <a class="navbar-item">
-                  Contact
+                <a class="navbar-item" href="https://bulma.io/documentation/columns/basics/">
+                 Columns
+                </a>
+                <a class="navbar-item" href="https://bulma.io/documentation/layout/container/">
+                 Layout
+                </a>
+                <a class="navbar-item" href="https://bulma.io/documentation/form/general/">
+                  Form
                 </a>
                 <hr class="navbar-divider">
-                <a class="navbar-item">
-                  Report an issue
+                <a class="navbar-item" href="https://bulma.io/documentation/elements/box/">
+                  Elements
+                </a>
+                <a class="navbar-item is is-active" href="https://bulma.io/documentation/components/breadcrumb/">
+                  Components
                 </a>
               </div>
             </div>
@@ -62,33 +69,298 @@
       
           <div class="navbar-end">
             <div class="navbar-item">
-              <div class="buttons">
-                <a class="button is-primary">
-                  <strong>Sign up</strong>
-                </a>
-                <a class="button is-light">
-                  Log in
+              <div class="field is-grouped">
+                <p class="control">
+                  <a
+                    class="bd-tw-button button"
+                    data-social-network="Twitter"
+                    data-social-action="tweet"
+                    data-social-target="https://bulma.io"
+                    target="_blank"
+                    href="https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&amp;hashtags=bulmaio&amp;url=https://bulma.io&amp;via=jgthms"
+                  >
+                    <span class="icon">
+                      <i class="fab fa-twitter"></i>
+                    </span>
+                    <span> Tweet </span>
+                  </a>
+                </p>
+                <p class="control">
+                  <a class="button is-primary has-text-white" href="https://github.com/jgthms/bulma/releases/download/1.0.2/bulma-1.0.2.zip">
+                    <span class="icon">
+                      <i class="fas fa-download"></i>
+                    </span>
+                    <span>Download</span>
                 </a>
               </div>
             </div>
           </div>
         </div>
       </nav>
-    <h1> THis is my example</h1>
-    <p>This is my example</p>
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <script>
-         const { createApp, ref } = Vue
+      <div class="section">
+        <div class="container">
+          <div class="columns">
+            <div class="column is-one-quarter">
+              <div class="card">
+                <header class="card-header">
+                  <p class="card-header-title">Component</p>
+                  <button class="card-header-icon" aria-label="more options">
+                    <span class="icon">
+                      <i class="fas fa-angle-down" aria-hidden="true"></i>
+                    </span>
+                  </button>
+                </header>
+                <div class="card-content">
+                  <div class="content">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec
+                    iaculis mauris.
+                    <a href="#">@bulmaio</a>. <a href="#">#css</a> <a href="#">#responsive</a>
+                    <br />
+                    <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                  </div>
+                </div>
+                <footer class="card-footer">
+                  <a href="#" class="card-footer-item">Save</a>
+                  <a href="#" class="card-footer-item">Edit</a>
+                  <a href="#" class="card-footer-item">Delete</a>
+                </footer>
+              </div>
+            </div>
+            <div class="column is-half"> 
+              <article class="panel">
+                <div class="tabs is-boxed">
+                  <ul>
+                    <li class="is-active">
+                      <a>
+                        <span class="icon is-small">
+                          <i class="fas fa-light fa-clipboard"></i>
+                        </span>
+                        <span>Current</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <span class="icon is-small">
+                          <i class="fas fa-regular fa-calendar-times"></i>
+                        </span>
+                        <span>Completed</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <span class="icon is-small">
+                          <i class="fas fa-solid fa-calendar-day"></i>
+                        </span>
+                        <span>Upcoming</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <span class="icon is-small">
+                          <i class="fas fa-solid fa-calendar"></i>
+                        </span>
+                        <span>All</span>
+                      </a>
+                    </li>
+                  </ul> 
+                </div>
+                <div class="panel-block">
+                  <p class="control has-icons-left">
+                    <input class="input" type="text" placeholder="New Task" />
+                    <span class="icon is-left">
+                      <i class="fas fa-solid fa-calendar-plus"></i>
+                    </span>
+                  </p>
+                </div> 
+                <a class="panel-block">
+                  <input type="checkbox" checked>
+                  Make Bulma great again
+                </a>
+                <a class="panel-block">                
+                  <input type="checkbox" >
+                  Add some more features
+                </a>
+                <a class="panel-block">                
+                  <input type="checkbox" >
+                  Make a github account
+                </a><a class="panel-block">                
+                  <input type="checkbox" >
+                  Learn how to use github
+                </a>
+                <a class="panel-block">                
+                  <input type="checkbox" >
+                  add a .gitignore file
+                </a>
+              </article>
 
-createApp({
-  setup() {
-    const message = ref('Hello vue!')
-    return {
-      message
-    }
-  }
-}).mount('#app')
+              <article class="message is-primary">
+                <div class="message-header">
+                  <p>Primary</p>
+                  <button class="delete" aria-label="delete"></button>
+                </div>
+                <div class="message-body">
+                  <p>Go to <a href="https://github.com/">github.com</a>and create an account.</p>
+                  <p>That's where you'll be able to share your work with the the world.. thats where</p>
+                  <p>We will be putting all of our code for this class.</p>                                     
+                  <progress class="progress is-success" value="60" max="100">60%</progress>                  
+                </div>
+              </article>
 
-    </script> 
+              <form class="box">
+                <div class="field">
+                  <label class="label">Name</label>
+                  <div class="control">
+                    <input class="input" type="text" placeholder="Text input">
+                  </div>
+                </div>
+                
+                <div class="field">
+                  <label class="label">Username</label>
+                  <div class="control has-icons-left has-icons-right">
+                    <input class="input is-success" type="text" placeholder="Text input" value="bulma">
+                    <span class="icon is-small is-left">
+                      <i class="fas fa-user"></i>
+                    </span>
+                    <span class="icon is-small is-right">
+                      <i class="fas fa-check"></i>
+                    </span>
+                  </div>
+                  <p class="help is-success">This username is available</p>
+                </div>
+                
+                <div class="field">
+                  <label class="label">Email</label>
+                  <div class="control has-icons-left has-icons-right">
+                    <input class="input is-danger" type="email" placeholder="Email input" value="hello@">
+                    <span class="icon is-small is-left">
+                      <i class="fas fa-envelope"></i>
+                    </span>
+                    <span class="icon is-small is-right">
+                      <i class="fas fa-exclamation-triangle"></i>
+                    </span>
+                  </div>
+                  <p class="help is-danger">This email is invalid</p>
+                </div>
+                
+                <div class="field">
+                  <label class="label">Subject</label>
+                  <div class="control">
+                    <div class="select">
+                      <select>
+                        <option>Select dropdown</option>
+                        <option>With options</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="field">
+                  <label class="label">Message</label>
+                  <div class="control">
+                    <textarea class="textarea" placeholder="Textarea"></textarea>
+                  </div>
+                </div>
+                
+                <div class="field">
+                  <div class="control">
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      I agree to the <a href="#">terms and conditions</a>
+                    </label>
+                  </div>
+                </div>
+                
+                <div class="field">
+                  <div class="control">
+                    <label class="radio">
+                      <input type="radio" name="question">
+                      Yes
+                    </label>
+                    <label class="radio">
+                      <input type="radio" name="question">
+                      No
+                    </label>
+                  </div>
+                </div>
+                
+                <div class="field is-grouped">
+                  <div class="control">
+                    <button class="button is-link">Submit</button>
+                  </div>
+                  <div class="control">
+                    <button class="button is-link is-light">Cancel</button>
+                  </div>
+                </div>                  
+               </form>
+               <div class="box" id="todo-list">
+                <h2 class="subtitle">Todo List</h2>
+                <div class="field">
+                    <label class="label">New Todo</label>
+                    <div class="control">
+                        <input class="input" id="todoInput" type="text" placeholder="Add a new todo item">
+                    </div>
+                </div>
+                <div class="todo-list" id="todoList"></div>
+            </div>
+               
+
+            </div>
+            <div class="column is-half">
+              <h2 class="title">Table of contents</h2>
+              <h3 class="subtitle">Intra-page navigation</h3>
+              <aside class="menu">
+  <p class="menu-label">General</p>
+  <ul class="menu-list">
+    <li><a>Dashboard</a></li>
+    <li><a>Customers</a></li>
+  </ul>
+  <p class="menu-label">Administration</p>
+  <ul class="menu-list">
+    <li><a>Team Settings</a></li>
+    <li>
+      <a class="is-active">Manage Your Team</a>
+      <ul>
+        <li><a>Members</a></li>
+        <li><a>Plugins</a></li>
+        <li><a>Add a member</a></li>
+      </ul>
+    </li>
+    <li><a>Invitations</a></li>
+    <li><a>Cloud Storage Environment Settings</a></li>
+    <li><a>Authentication</a></li>
+  </ul>
+  <p class="menu-label">Transactions</p>
+  <ul class="menu-list">
+    <li><a>Payments</a></li>
+    <li><a>Transfers</a></li>
+    <li><a>Balance</a></li>
+  </ul>
+</aside>
+            </div>
+          </div>
+        </div>
+        <script>
+            const todoInput = document.getElementById('todoInput');
+            const todoList = document.getElementById('todoList');
+
+            todoInput.addEventListener('keypress', function (event) {
+                if (event.key === 'Enter' && todoInput.value.trim() !== '') {
+                    const todoItem = document.createElement('div');
+                    todoItem.classList.add('todo-item', 'is-flex', 'is-align-items-center', 'mb-2');
+                    
+                    todoItem.innerHTML = `
+                        <span class="mr-2">${todoInput.value}</span>
+                    `;
+                    
+                    todoList.appendChild(todoItem);
+                    todoInput.value = ''; // Clear input
+                }
+            });
+        </script>
+
+      </div>
+
+      
+      
 </body>
 </html>
