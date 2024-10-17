@@ -1,6 +1,13 @@
-export interface DataEnvelope<T>{
-    data: T;
-    error: string;
+/* B"H
+ */
+
+export interface DataEnvelope<T> {
+  data: T
+  error?: string
 }
 
-export interface DataListEnvelope
+export interface DataListEnvelope<T> extends DataEnvelope<T[]> {
+  data: T[]
+  total: number
+  error?: string
+}
