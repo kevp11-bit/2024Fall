@@ -45,8 +45,8 @@ const isAccountDropdownOpen = ref(false)
             <a class="navbar-link"> <i class="fas fa-users"></i>Friends </a>
 
             <div class="navbar-dropdown">
-              <RouterLink to="/about" class="navbar-item"> Activity </RouterLink>
-              <RouterLink to="/jobs" class="navbar-item"> Search </RouterLink>
+              <RouterLink to="/activity" class="navbar-item"> Activity </RouterLink>
+              <RouterLink to="/search" class="navbar-item"> Search </RouterLink>
             </div>
           </div>
         </div>
