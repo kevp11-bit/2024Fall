@@ -1,6 +1,6 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
+  <div class="friendsActivity">
+    <h1>This is a avtivity page for friends</h1>
   </div>
 </template>
 
