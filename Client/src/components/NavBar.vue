@@ -30,14 +30,13 @@ const isAccountDropdownOpen = ref(false)
 
       <div class="navbar-menu" :class="{ 'is-active': isOpen }">
         <div class="navbar-start">
-          <RouterLink to="/" class="navbar-item">
+          <RouterLink to="/MyWorkout" class="navbar-item">
             <i class="fas fa-dumbbell mr-2"></i>
             MyWorkouts
           </RouterLink>
 
-          <RouterLink to="/" class="navbar-item">
+          <RouterLink to="/Stats" class="navbar-item">
             <i class="fas fa-chart-area"></i>
-
             Statistics
           </RouterLink>
 
