@@ -2,7 +2,7 @@
 
 <template>
   <div>
-    <h1 class="Statistics">Statistics PAge</h1>
+    <h1 class="Stats">Stats page</h1>
   </div>
 </template>
 
