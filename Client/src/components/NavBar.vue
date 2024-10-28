@@ -11,7 +11,9 @@ const isAccountDropdownOpen = ref(false)
   <nav class="navbar is-info" role="navigation" aria-label="main navigation">
     <div class="container">
       <div class="navbar-brand">
-        <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="20" height="20" />
+        <RouterLink to="/App" class="navbar-item">
+          <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="20" height="20" />
+        </RouterLink>
 
         <a
           role="button"
@@ -40,14 +42,15 @@ const isAccountDropdownOpen = ref(false)
             Statistics
           </RouterLink>
 
-          <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link"> <i class="fas fa-users"></i>Friends </a>
+          <RouterLink to="/Friends" class="navbar-item">
+            <i class="fas fa-users"></i>
+            Friends
+          </RouterLink>
 
-            <div class="navbar-dropdown">
-              <RouterLink to="/activity" class="navbar-item"> Activity </RouterLink>
-              <RouterLink to="/search" class="navbar-item"> Search </RouterLink>
-            </div>
-          </div>
+          <RouterLink to="/Users" class="navbar-item">
+            <i class="fas fa-user-shield"></i>
+            Admin
+          </RouterLink>
         </div>
 
         <div class="navbar-end">

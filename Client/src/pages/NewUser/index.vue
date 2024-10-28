@@ -103,7 +103,7 @@ body {
 }
 
 .hero {
-  background-color: #f4f4f4; /* Light gray background */
+  background-color: white; /* Light gray background */
 }
 
 .hero-body {
