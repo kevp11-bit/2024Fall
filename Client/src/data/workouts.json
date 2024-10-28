@@ -1,0 +1,74 @@
+{
+  "workout": [
+    {
+      "id": 1,
+
+      "description": "Chest and Triceps",
+      "time": "1 hour",
+      "location": "Gym"
+    },
+    {
+      "id": 2,
+
+      "description": "Back and Biceps",
+      "time": "1 hour",
+      "location": "Gym"
+    },
+    {
+      "id": 3,
+
+      "description": "Legs",
+      "time": "1 hour",
+      "location": "Gym"
+    },
+    {
+      "id": 4,
+
+      "description": "Shoulders",
+      "time": "1 hour",
+      "location": "Gym"
+    },
+    {
+      "id": 5,
+
+      "description": "Cardio",
+      "time": "1 hour",
+      "location": "Gym"
+    },
+    {
+      "id": 6,
+
+      "description": "Full Body",
+      "time": "1 hour",
+      "location": "Gym"
+    },
+    {
+      "id": 7,
+
+      "description": "Yoga",
+      "time": "1 hour",
+      "location": "Gym"
+    },
+    {
+      "id": 8,
+
+      "description": "Pilates",
+      "time": "1 hour",
+      "location": "Gym"
+    },
+    {
+      "id": 9,
+
+      "description": "Zumba",
+      "time": "1 hour",
+      "location": "Gym"
+    },
+    {
+      "id": 10,
+
+      "description": "Kickboxing",
+      "time": "1 hour",
+      "location": "Gym"
+    }
+  ]
+}
